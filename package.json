@@ -11,6 +11,7 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
+    "canv": "^1.2.5",
     "sass": "^1.52.1",
     "sinuous": "^0.28.1"
   }

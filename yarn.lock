@@ -22,6 +22,11 @@ braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
+canv@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/canv/-/canv-1.2.5.tgz#18d65a9a8ce5ee6b67c907b993c954dfaf4b3a8b"
+  integrity sha512-kFUMYPWL65aQpHLZEn7KWCYSudFnZLBJlcTSlDV/eoOOYhMM1iVvgjKA6IHT8uS4lQ1RFYqwLmTl/asGFl03wQ==
+
 "chokidar@>=3.0.0 <4.0.0":
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"

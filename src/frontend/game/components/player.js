@@ -9,6 +9,9 @@ export const Player = () => {
             ctx.arc(0, 0, 10, 0, Math.PI * 2);
             ctx.stroke();
             ctx.closePath();
+        },
+        data: {
+            speed: {x: 0, y: 0}
         }
     }
 };

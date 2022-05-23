@@ -1,0 +1,18 @@
+{
+  "name": "backend-shoooter",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gaibullaevs",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0",
+    "socket.io": "^4.5.1"
+  }
+}

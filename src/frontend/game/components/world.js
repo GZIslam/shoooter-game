@@ -5,13 +5,18 @@ import { Map } from "./map";
 import { Player } from "./player";
 
 export const World = (canvas) => {
-    const space = Space(canvas, {scale: 2, animationTick: (ts) => {
-        space.objects.forEach(el => {
-            if(el.data?.speed) {
-                el.position.center.x += el.data.speed.x;
-                el.position.center.y += el.data.speed.y;
-            }
-        })
+    let prevTs;
+    const space = Space(canvas, {scale: 2, animationTick: function (ts) {
+        if(prevTs) {
+            const dt = (ts - prevTs) / 10;
+            space.objects.forEach(el => {
+                if(el.data?.speed) {
+                    el.position.center.x += el.data.speed.x * dt;
+                    el.position.center.y += el.data.speed.y * dt;
+                }
+            })
+        };
+        prevTs = ts;
     }});
 
     const map = space.addDrawable(Map());
@@ -23,5 +28,3 @@ export const World = (canvas) => {
 
     return space;
 };
-
-//test
